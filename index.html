@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - POP!ulation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR (MATCHED) -->
+<div>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="">Problem</a>
+    <a href="">References</a>
+</div>
+
+<h1>Join POP!ulation</h1>
+<p>Be part of raising awareness about overpopulation.</p>
+
+<form onsubmit="return validateForm()">
+
+    <!-- PERSONAL INFO -->
+    <h3>Basic Information</h3>
+
+    Full Name:
+    <input type="text" id="fullName" onblur="this.style.backgroundColor='#eef'">
+    <span id="nameError"></span>
+
+    Birthdate:
+    <input type="date" id="birthdate">
+    <span id="birthError"></span>
+
+    Sex:
+    <input type="radio" name="sex" value="male"> Male
+    <input type="radio" name="sex" value="female"> Female
+    <span id="sexError"></span>
+
+    Email:
+    <input type="email" id="email">
+    <span id="emailError"></span>
+
+    <!-- ACCOUNT -->
+    <h3>Account Details</h3>
+
+    Username:
+    <input type="text" id="username">
+    <span id="userError"></span>
+
+    Password:
+    <input type="password" id="password">
+    <span id="passError"></span>
+
+    Confirm Password:
+    <input type="password" id="confirmPassword">
+    <span id="confirmError"></span>
+
+    <!-- TOPIC QUESTIONS -->
+    <h3>Your Awareness Preferences</h3>
+
+    Which issue concerns you most?
+    <select id="category">
+        <option value="">-- choose --</option>
+        <option value="resources">Resource shortage</option>
+        <option value="pollution">Pollution</option>
+        <option value="poverty">Poverty</option>
+    </select>
+    <span id="categoryError"></span>
+
+    What topics interest you?
+    <input type="checkbox" name="interests" value="population"> Population Growth
+    <input type="checkbox" name="interests" value="environment"> Environment
+    <input type="checkbox" name="interests" value="policy"> Government Policy
+    <span id="interestError"></span>
+
+    How often do you engage with awareness content?
+    <input type="radio" name="frequency" value="daily"> Daily
+    <input type="radio" name="frequency" value="weekly"> Weekly
+    <input type="radio" name="frequency" value="rarely"> Rarely
+    <span id="freqError"></span>
+
+    <br>
+    <button type="submit">Join Us and Make a Difference 🌍</button>
+
+</form>
+
+<p id="successMessage"></p>
+
+<br>
+<a href="index.html">Back to Homepage</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
